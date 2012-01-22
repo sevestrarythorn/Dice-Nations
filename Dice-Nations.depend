@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1327264097 source:c:\documents and settings\james knight\dice-nations\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

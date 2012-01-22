@@ -29,7 +29,7 @@ int main()
     int dice_roll;
 
     // Asking to run program.
-    cout << "Would you like to run Dice Nations? [Y/N]: ";
+    cout << "Would you like to play Dice Nations? [Y/N]: ";
     cin >> runprogram;
 
     while (toupper(runprogram) == 'Y')
@@ -52,6 +52,7 @@ int main()
         while (curr_turn != max_turns)
         {
             cout << "Your nation stats are like this: " << endl;
+            cout << "Nation name: " << nation_name << "." << endl;
             cout << "Nation population: " << nation_pop << "." << endl;
             cout << "Nation economy: $" << nation_econ << "." << endl;
             cout << "Nation life expectancy: " << nation_life << "." << endl;
@@ -109,8 +110,24 @@ int main()
                 nation_iq = nation_iq + 2;
                 nation_mil = nation_mil * 1.05;
             }
-
+            curr_turn++;
         }
-
+        cout << "Would you like to play again? [Y/N]: ";
+        cin >> runprogram;
+        ofstream scorefile;
+        scorefile.open ("scores.txt");
+        scorefile << max_turns << " turn game --------------------" << endl;
+        cout << "Nation name: " << nation_name << "." << endl;
+        cout << "Nation population: " << nation_pop << "." << endl;
+        cout << "Nation economy: $" << nation_econ << "." << endl;
+        cout << "Nation life expectancy: " << nation_life << "." << endl;
+        cout << "Nation IQ: " << nation_iq << "." << endl;
+        cout << "Nation military size: " << nation_mil << "." << endl;
+        cout << "Turn " << curr_turn << " of " << max_turns << "." << endl;
+        scorefile << "--------------------" << endl;
+        scorefile.close();
     }
+    cout << "Please press enter to exit.";
+    cin.ignore(1);
+    cin.ignore(1);
 }
