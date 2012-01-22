@@ -112,11 +112,6 @@ int main()
             }
             curr_turn++;
         }
-        cout << "Would you like to play again? [Y/N]: ";
-        cin >> runprogram;
-        ofstream scorefile;
-        scorefile.open ("scores.txt");
-        scorefile << max_turns << " turn game --------------------" << endl;
         cout << "Nation name: " << nation_name << "." << endl;
         cout << "Nation population: " << nation_pop << "." << endl;
         cout << "Nation economy: $" << nation_econ << "." << endl;
@@ -124,10 +119,22 @@ int main()
         cout << "Nation IQ: " << nation_iq << "." << endl;
         cout << "Nation military size: " << nation_mil << "." << endl;
         cout << "Turn " << curr_turn << " of " << max_turns << "." << endl;
+        cout << "Please press enter to exit.";
+        cout << "Would you like to play again? [Y/N]: ";
+        cin >> runprogram;
+        ofstream scorefile;
+        scorefile.open ("scores.txt");
+        scorefile << max_turns << " turn game --------------------" << endl;
+        scorefile << "Nation name: " << nation_name << "." << endl;
+        scorefile << "Nation population: " << nation_pop << "." << endl;
+        scorefile << "Nation economy: $" << nation_econ << "." << endl;
+        scorefile << "Nation life expectancy: " << nation_life << "." << endl;
+        scorefile << "Nation IQ: " << nation_iq << "." << endl;
+        scorefile << "Nation military size: " << nation_mil << "." << endl;
+        scorefile << "Turn " << curr_turn << " of " << max_turns << "." << endl;
         scorefile << "--------------------" << endl;
         scorefile.close();
     }
-    cout << "Please press enter to exit.";
     cin.ignore(1);
     cin.ignore(1);
 }
