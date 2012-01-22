@@ -63,51 +63,51 @@ int main()
 
             if (dice_roll == 1)
             {
-                nation_pop = nation_pop / 0.95;
-                nation_econ = nation_econ / 0.95;
+                nation_pop = nation_pop * 0.95;
+                nation_econ = nation_econ * 0.95;
                 nation_life = nation_life - 1;
                 nation_iq = nation_iq - 2;
-                nation_mil = nation_mil / 0.95;
+                nation_mil = nation_mil * 0.95;
             }
             if (dice_roll == 2)
             {
-                nation_pop = nation_pop / 0.97;
-                nation_econ = nation_econ / 0.97;
+                nation_pop = nation_pop * 0.97;
+                nation_econ = nation_econ * 0.97;
                 nation_life = nation_life - 0.5;
                 nation_iq = nation_iq - 1;
-                nation_mil = nation_mil / 0.97;
+                nation_mil = nation_mil * 0.97;
             }
             if (dice_roll == 3)
             {
-                nation_pop = nation_pop / 0.99;
-                nation_econ = nation_econ / 0.99;
+                nation_pop = nation_pop * 0.99;
+                nation_econ = nation_econ * 0.99;
                 nation_life = nation_life - 0.1;
                 nation_iq = nation_iq - 1;
-                nation_mil = nation_mil / 0.99;
+                nation_mil = nation_mil * 0.99;
             }
             if (dice_roll == 4)
             {
-                nation_pop = nation_pop / 1.01;
-                nation_econ = nation_econ / 1.01;
+                nation_pop = nation_pop * 1.01;
+                nation_econ = nation_econ * 1.01;
                 nation_life = nation_life + 0.1;
                 nation_iq = nation_iq + 1;
-                nation_mil = nation_mil / 1.01;
+                nation_mil = nation_mil * 1.01;
             }
             if (dice_roll == 5)
             {
-                nation_pop = nation_pop / 1.03;
-                nation_econ = nation_econ / 1.03;
+                nation_pop = nation_pop * 1.03;
+                nation_econ = nation_econ * 1.03;
                 nation_life = nation_life + 0.5;
                 nation_iq = nation_iq + 1;
-                nation_mil = nation_mil / 1.03;
+                nation_mil = nation_mil * 1.03;
             }
             if (dice_roll == 6)
             {
-                nation_pop = nation_pop / 1.05;
-                nation_econ = nation_econ / 1.05;
+                nation_pop = nation_pop * 1.05;
+                nation_econ = nation_econ * 1.05;
                 nation_life = nation_life + 1;
                 nation_iq = nation_iq + 2;
-                nation_mil = nation_mil / 1.05;
+                nation_mil = nation_mil * 1.05;
             }
 
         }
