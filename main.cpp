@@ -58,7 +58,7 @@ int main()
             cout << "Nation IQ: " << nation_iq << "." << endl;
             cout << "Nation military size: " << nation_mil << "." << endl;
             cout << "Turn " << curr_turn << " of " << max_turns << "." << endl;
-            cout << "Roll the dice and enter what you rolled: " << endl;
+            cout << "Roll the dice and enter what you rolled: "
             cin >> dice_roll;
 
             if (dice_roll == 1)
