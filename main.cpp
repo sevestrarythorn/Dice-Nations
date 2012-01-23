@@ -1,11 +1,15 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main()
 {
+    // Seeding random numbers.
+    srand((unsigned)time(0));
     // Declaring variables.
     // Nation name.
     string nation_name;
@@ -25,8 +29,6 @@ int main()
     int max_turns;
     // Current turn.
     int curr_turn;
-    // Dice roll.
-    int dice_roll;
 
     // Asking to run program.
     cout << "Would you like to play Dice Nations? [Y/N]: ";
@@ -59,9 +61,10 @@ int main()
             cout << "Nation IQ: " << nation_iq << "." << endl;
             cout << "Nation military size: " << nation_mil << "." << endl;
             cout << "Turn " << curr_turn << " of " << max_turns << "." << endl;
-            cout << "Roll the dice and enter what you rolled: ";
-            cin >> dice_roll;
-
+            cout << "Press enter to roll the dice.";
+            cin.ignore(1);
+            int dice_roll = rand() % 6 + 1;
+            cout << "You rolled a " << dice_roll << "." << endl;
             if (dice_roll == 1)
             {
                 nation_pop = nation_pop * 0.95;
@@ -119,7 +122,6 @@ int main()
         cout << "Nation IQ: " << nation_iq << "." << endl;
         cout << "Nation military size: " << nation_mil << "." << endl;
         cout << "Turn " << curr_turn << " of " << max_turns << "." << endl;
-        cout << "Please press enter to exit.";
         cout << "Would you like to play again? [Y/N]: ";
         cin >> runprogram;
         ofstream scorefile;
@@ -135,6 +137,7 @@ int main()
         scorefile << "--------------------" << endl;
         scorefile.close();
     }
+    cout << "Please press enter to exit.";
     cin.ignore(1);
     cin.ignore(1);
 }

@@ -1,9 +1,9 @@
 50 turn game --------------------
 Nation name: Rythorn.
-Nation population: 11369.
-Nation economy: $11467316.
-Nation life expectancy: 90.
-Nation IQ: 180.
-Nation military size: 1054.
+Nation population: 1253.
+Nation economy: $1278983.
+Nation life expectancy: 45.7.
+Nation IQ: 89.
+Nation military size: 98.
 Turn 50 of 50.
 --------------------
