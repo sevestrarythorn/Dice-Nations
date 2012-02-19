@@ -77,7 +77,8 @@ int main()
             cout << "Nation IQ: " << nation_iq << "." << endl;
             cout << "Nation military size: " << nation_mil << "." << endl;
             cout << "Turn " << curr_turn << " of " << max_turns << "." << endl;
-            cout << "Press enter to roll the dice.";
+            cout << "Press enter to roll the dice." << endl;
+            cin.ignore(1);
             cin.ignore(1);
             int dice_roll = rand() % 6 + 1;
             cout << "You rolled a " << dice_roll << "." << endl;
