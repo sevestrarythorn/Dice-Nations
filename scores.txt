@@ -1,9 +1,0 @@
-500 turn game --------------------
-Nation name: Rythorn.
-Nation population: 1056.
-Nation economy: $1248697.
-Nation life expectancy: 50.
-Nation IQ: 72.
-Nation military size: 110.
-Turn 500 of 500.
---------------------

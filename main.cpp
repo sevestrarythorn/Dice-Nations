@@ -178,7 +178,6 @@ int main()
         scorefile << "Nation life expectancy: " << nation_life << "." << endl;
         scorefile << "Nation IQ: " << nation_iq << "." << endl;
         scorefile << "Nation military size: " << nation_mil << "." << endl;
-        scorefile << "Turn " << curr_turn << " of " << max_turns << "." << endl;
         scorefile << "--------------------" << endl;
         scorefile.close();
     }
