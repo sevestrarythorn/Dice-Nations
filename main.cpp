@@ -64,7 +64,7 @@ int main()
         nation_econ = 1000000;
         nation_life = 40;
         nation_iq = 60;
-        nation_mil = 100;
+        nation_mil = 250;
         curr_turn = 0;
 
         while (curr_turn != max_turns)
