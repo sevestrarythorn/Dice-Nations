@@ -63,7 +63,7 @@ int main()
         nation_pop = 1000;
         nation_econ = 1000000;
         nation_life = 40;
-        nation_iq = 80;
+        nation_iq = 60;
         nation_mil = 100;
         curr_turn = 0;
 
@@ -130,6 +130,34 @@ int main()
                 nation_mil = nation_mil * 1.05;
             }
             curr_turn++;
+            if (nation_pop <= 2)
+            {
+                nation_pop = 2;
+            }
+            if (nation_econ <= 1000)
+            {
+                nation_econ = 1000;
+            }
+            if (nation_life <= 20)
+            {
+                nation_life = 20;
+            }
+            if (nation_life >= 90)
+            {
+                nation_life = 90;
+            }
+            if (nation_iq <= 20)
+            {
+                nation_life = 20;
+            }
+            if (nation_iq >= 250)
+            {
+                nation_iq = 250;
+            }
+            if (nation_mil <= 10)
+            {
+                nation_mil = 10;
+            }
         }
         cout << "Nation name: " << nation_name << "." << endl;
         cout << "Nation population: " << nation_pop << "." << endl;
